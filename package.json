@@ -1,0 +1,27 @@
+{
+  "name": "design-repair-company",
+  "version": "1.0.0",
+  "description": "Сайт компании по ремонту квартир",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaShow/Design-Repair-Company.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaShow/Design-Repair-Company/issues"
+  },
+  "homepage": "https://github.com/NikitaShow/Design-Repair-Company#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0"
+  },
+  "dependencies": {
+    "gulp-rename": "^2.0.0"
+  }
+}
