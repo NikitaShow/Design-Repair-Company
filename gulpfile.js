@@ -5,7 +5,8 @@ const sass = require('gulp-sass');
 
 // Static server
  function bs() {
-  browserSync.init({
+    serveSass();
+    browserSync.init({
       server: {
           baseDir: "./"
       }
@@ -15,10 +16,10 @@ const sass = require('gulp-sass');
   watch("./js/*.js").on('change', browserSync.reload);
 };
 
- function serveSass() {
-  return gulp.src("./sass/*.sass")
+function serveSass() {
+  return src("./sass/*.sass")
       .pipe(sass())
-      .pipe(gulp.dest("./css"))
+      .pipe(dest("./css"))
       .pipe(browserSync.stream());
 };
 
