@@ -329,6 +329,7 @@ template {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
 
 .container {
+  width: 86%;
   max-width: 1256px;
   margin: auto; }
 
@@ -356,6 +357,32 @@ template {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.hero {
+  position: relative;
+  background: #131313 url("../img/hero_bg.jpg") no-repeat center/cover;
+  color: #fff;
+  height: 100vh; }
+  .hero__instagram {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 90px;
+    height: 100%; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+  .instagram__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E3B873;
+    transform: rotate(90deg); }
+
+.title {
+  margin: 0; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
