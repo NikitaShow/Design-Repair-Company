@@ -7,7 +7,16 @@
   background: $dark url('../img/hero_bg.jpg') no-repeat center / cover
   color: $light
   height: 100vh
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.7)
   &__content
+    position: relative
     max-width: 670px
   &__text
     max-width: 504px
@@ -33,19 +42,37 @@
     text-transform: uppercase
     text-decoration: none
     color: $light
+    &::after
+      content: ''
+      background: url('../img/arrow-down.svg') no-repeat center
+      margin-left: 12px
+      width: 29px
+      height: 29px
+      border: 2px solid $primary
+      border-radius: 50%
 .instagram
   display: flex
   justify-content: center
   align-items: center
   background-color: $dark
   &__link
+    display: flex
+    justify-content: center
+    align-items: center
     text-transform: uppercase
     text-decoration: none
     color: $primary
     transform: rotate(90deg)
+    &::after
+      content: ''
+      width: 51px
+      height: 1px
+      margin-left: 8px
+      background-color: $primary
 .title
   margin: 0  
   font-size: 40px
+  font-weight: normal
   text-transform: uppercase
   font-family: 'Yeseva One', cursive
   &--primary

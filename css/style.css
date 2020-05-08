@@ -323,11 +323,15 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
   .button--primary {
     color: #fff;
     background-color: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    transition: box-shadow 0.2s; }
+    .button--primary:hover {
+      box-shadow: none; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
@@ -360,7 +364,10 @@ template {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+  transition: color 0.2s; }
+  .nav__item:hover {
+    color: #E3B873; }
 
 .phone {
   color: #E3B873; }
@@ -377,7 +384,16 @@ template {
   background: #131313 url("../img/hero_bg.jpg") no-repeat center/cover;
   color: #fff;
   height: 100vh; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
+    position: relative;
     max-width: 670px; }
   .hero__text {
     max-width: 504px;
@@ -403,6 +419,14 @@ template {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff; }
+    .hero__scroll-down::after {
+      content: '';
+      background: url("../img/arrow-down.svg") no-repeat center;
+      margin-left: 12px;
+      width: 29px;
+      height: 29px;
+      border: 2px solid #E3B873;
+      border-radius: 50%; }
 
 .instagram {
   display: flex;
@@ -410,14 +434,24 @@ template {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #E3B873;
     transform: rotate(90deg); }
+    .instagram__link::after {
+      content: '';
+      width: 51px;
+      height: 1px;
+      margin-left: 8px;
+      background-color: #E3B873; }
 
 .title {
   margin: 0;
   font-size: 40px;
+  font-weight: normal;
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive; }
   .title--primary {
