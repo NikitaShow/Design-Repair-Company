@@ -387,23 +387,30 @@ body {
 
 .logo {
   color: #E3B873;
-  font-size: 1.075rem;
+  font-family: 'Futura Demi', Tahoma, sans-serif;
+  font-size: 1rem;
   text-transform: uppercase; }
 
-.nav__item {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-right: 2.5rem;
-  transition: color 0.2s; }
-  .nav__item:hover {
-    color: #E3B873; }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 38.71rem; }
+  .nav__item {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s; }
+    .nav__item:hover {
+      color: #E3B873; }
 
 .phone {
   color: #E3B873; }
 
 .contacts__phone {
   margin-right: 45px; }
+
+.contacts__button {
+  padding: 11px 20px; }
 
 .hero {
   position: relative;
