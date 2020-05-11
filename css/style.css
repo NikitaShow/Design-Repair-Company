@@ -341,7 +341,7 @@ template {
     color: #fff; }
 
 .container {
-  width: 86%;
+  width: 95%;
   max-width: 1256px;
   margin: auto; }
 
@@ -414,6 +414,14 @@ body {
   background: #131313 url("../img/hero_bg.jpg") no-repeat center/cover;
   color: #fff;
   height: 100vh; }
+  .hero::after {
+    position: absolute;
+    width: 100%;
+    height: 3.46rem;
+    bottom: 0;
+    left: 0;
+    background-color: #131313;
+    z-index: 5; }
   .hero::before {
     content: '';
     position: absolute;
@@ -445,7 +453,6 @@ body {
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
-    transform: translateY(50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -502,8 +509,8 @@ body {
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 10px; }
-  .nav {
+    font-size: 12px; }
+  .nav__item {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
