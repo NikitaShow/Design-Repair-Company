@@ -478,7 +478,7 @@ body {
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
-      margin-left: 12px;
+      margin-left: 19px;
       width: 29px;
       height: 29px;
       border: 2px solid #E3B873;
