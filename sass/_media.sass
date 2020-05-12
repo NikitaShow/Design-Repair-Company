@@ -12,6 +12,17 @@
       display: none  
     &__content
       margin-left: 0  
+@media screen and (max-width: 760px)    
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 4.29rem
+  .card
+    &__text
+      margin-left: 0    
+
 @media screen and (max-width: 570px)      
   .contacts
     &__phone
@@ -34,7 +45,19 @@
       display: block
       min-width: 24.14rem
       margin-bottom: 1.85rem
-@media screen and (max-height: 520px)
+  .card
+    &__text
+      width: 85%
+      max-width: 270px    
+    &__title
+      font-size: 1.07rem     
+    &__list
+      font-size: 0.92rem
+      margin-bottom: 1.43rem  
+    &__pricetag
+      width: 70.5%
+      font-size: 1.07rem
+@media screen and (max-height: 650px)
   .hero
     &__scroll-down
       display: none           
