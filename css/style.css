@@ -356,6 +356,9 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-size: 1rem; }
 
+p {
+  margin: 0; }
+
 img {
   max-width: 100%; }
 
@@ -572,7 +575,29 @@ img {
   font-weight: normal;
   text-transform: uppercase;
   background-color: #E3B873;
-  color: #fff; }
+  color: #fff;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
+
+.design__section-title {
+  margin-bottom: 3.5rem; }
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-title__image {
+    margin-bottom: 1.2rem; }
+  .section-title__text {
+    max-width: 53rem;
+    font-family: 'Futura Book', sans-serif;
+    font-size: 1.43rem;
+    line-height: 1.93rem;
+    color: #131313;
+    text-transform: none; }
+
+.card--design {
+  padding: 1.21rem 0 1.21rem 2.36rem;
+  text-align: left; }
 
 @media screen and (max-width: 1200px) {
   html {
