@@ -578,8 +578,10 @@ img {
   color: #fff;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
 
-.design__section-title {
-  margin-bottom: 3.5rem; }
+.design {
+  background: linear-gradient(to bottom, #fff 50%, #131313 50%); }
+  .design__section-title {
+    margin-bottom: 3.5rem; }
 
 .section-title {
   display: flex;
@@ -624,10 +626,15 @@ img {
     align-items: center; }
   .types__card {
     margin-bottom: 4.29rem; }
-  .design__card {
-    margin-bottom: 4.29rem; }
+  .design {
+    background: #131313; }
+    .design__section-title {
+      color: #fff; }
+    .design__card {
+      margin-bottom: 4.29rem; }
   .section-title__text {
-    font-size: 1.07rem; }
+    font-size: 1.07rem;
+    color: #fff; }
   .card__text {
     margin-left: 0; } }
 
