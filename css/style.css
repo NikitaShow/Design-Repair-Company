@@ -647,6 +647,8 @@ img {
   display: none; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -658,6 +660,9 @@ img {
   height: 100%;
   z-index: 200;
   background-color: rgba(19, 19, 19, 0.5); }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.6rem;
@@ -672,7 +677,9 @@ img {
     width: 28px;
     height: 28px;
     background: transparent url(../img/close.svg) no-repeat center;
-    border: none; }
+    border: none;
+    outline: none;
+    cursor: pointer; }
   .modal__title {
     margin: 0;
     margin-bottom: 2.428rem;

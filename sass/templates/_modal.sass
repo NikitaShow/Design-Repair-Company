@@ -1,4 +1,6 @@
 .modal
+  opacity: 0
+  visibility: hidden
   display: flex
   align-items: center
   justify-content: center
@@ -11,6 +13,9 @@
   height: 100%
   z-index: 200
   background-color: rgba($dark, 0.5)
+  &--visible
+    opacity: 1
+    visibility: visible
   &__dialog
     position: relative
     max-width: 36.6rem
@@ -26,7 +31,8 @@
     height: 28px
     background: transparent url(../img/close.svg) no-repeat center
     border: none
-    cursor: 
+    outline: none
+    cursor: pointer
   &__title
     margin: 0
     margin-bottom: 2.428rem
