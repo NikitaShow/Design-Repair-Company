@@ -74,8 +74,27 @@
       display: none
     &--media-second
       display: block 
+
+@media screen and (max-width: 470px) 
+  .modal
+    &__dialog
+      width: 80%
+      padding: 3rem 1.21rem 1.8rem 
+    &__close
+      margin: 3px
+      width: 28px
+      height: 28px
+    &__title
+      font-size: 1.2rem  
+    &__button
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-self: center
+      padding: 1.428rem 0
+      width: 100%       
       
 @media screen and (max-height: 650px)
   .hero
     &__scroll-down
-      display: none           
+      display: none
