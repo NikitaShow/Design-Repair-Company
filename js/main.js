@@ -10,3 +10,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
   closeBtn.addEventListener('click', switchModal);
 });
+
+document.body.addEventListener('keyup', function(event){
+  if (event.keyCode == 27) {
+  modal.classList.remove('modal--visible');
+};
+});
+
+modal.onclick = function (event) {
+  if (event.target == modal) {
+  modal.classList.remove('modal--visible');
+};
+};
+// document.addEventListener('click', function(e) {
+//   if(event.target.className = 'modal') {
+//   modal.classList.remove('modal--visible');
+// };
+// });
