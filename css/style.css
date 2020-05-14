@@ -327,6 +327,10 @@ template {
   text-transform: uppercase;
   outline: none;
   cursor: pointer; }
+  .button__top {
+    position: fixed;
+    left: 0;
+    bottom: 0; }
   .button--primary {
     color: #fff;
     background-color: #E3B873;
