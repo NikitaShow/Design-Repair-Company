@@ -797,3 +797,36 @@ img {
 @media screen and (max-height: 650px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-height: 420px) {
+  .header {
+    position: relative; }
+  .modal__dialog {
+    padding: 2rem 3.5rem 1.5rem; }
+  .modal__close {
+    width: 15px;
+    height: 15px; }
+  .modal__title {
+    font-size: 1rem;
+    margin-bottom: 1rem; }
+  .modal__input {
+    margin-bottom: 1.5rem; }
+  .modal__policy {
+    margin-bottom: 1rem; }
+  .modal__button {
+    align-self: flex-end;
+    padding: 10px 25px; }
+  .input {
+    font-size: 1rem; }
+  .policy__label {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem; }
+    .policy__label::before {
+      content: '';
+      margin-right: 0.64rem;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #E3B873;
+      border-radius: 1px;
+      cursor: pointer; } }

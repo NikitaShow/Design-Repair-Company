@@ -98,3 +98,40 @@
   .hero
     &__scroll-down
       display: none
+@media screen and (max-height: 420px)
+  .header
+    position: relative
+  .modal
+    &__dialog
+      padding: 2rem 3.5rem 1.5rem
+    &__close
+      width: 15px
+      height: 15px
+    &__title
+      font-size: 1rem   
+      margin-bottom: 1rem 
+    &__input
+      margin-bottom: 1.5rem 
+    &__policy
+      margin-bottom: 1rem  
+    &__button
+      align-self: flex-end
+      padding: 10px 25px     
+  .input
+    font-size: 1rem  
+  .policy
+    &__label
+      display: flex
+      align-items: center
+      font-size: 0.8rem
+      &::before
+        content: ''
+        margin-right: 0.64rem
+        width: 10px
+        height: 10px
+        border: 1px solid $primary
+        border-radius: 1px
+        cursor: pointer
+
+
+
