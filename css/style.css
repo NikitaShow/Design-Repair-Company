@@ -330,7 +330,8 @@ template {
   .button__top {
     position: fixed;
     left: 0;
-    bottom: 0; }
+    bottom: 0;
+    display: none; }
   .button--primary {
     color: #fff;
     background-color: #E3B873;

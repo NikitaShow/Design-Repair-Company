@@ -27,7 +27,7 @@ $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close'),
-      top_show = 500,
+      top_show = 300,
       delay = 1500;
 
   modalBtn.on('click', function () {
@@ -36,8 +36,9 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   }); 
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > top_show) $('.button__top').fadeIn();
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > top_show) $('.button__top').fadeIn();
       else $('.button__top').fadeOut();
   });
   $('.button__top').click(function () {
