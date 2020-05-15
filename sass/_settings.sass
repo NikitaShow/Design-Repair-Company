@@ -5,12 +5,14 @@ html
 body
   font-family: 'Futura Book', sans-serif
   font-size: 1rem
+h2 
+  margin: 0
 p
   margin: 0 
 img
   max-width: 100%
 .section
-  padding: 120px 0 
+  padding: 9.142rem 0 
   &--dark
     background-color: $dark
     color: $light
@@ -19,6 +21,10 @@ img
     text-transform: uppercase
     font-family: cursiv
     font-weight: normal
+    &__heading
+      margin-bottom: 1.214rem
+      &--space
+        margin-bottom: 1.8rem
     &--left
       text-align: left
     &__word
@@ -26,15 +32,17 @@ img
       align-items: center
       &::after
        content: ''
-       margin-left: 2rem  
-       width: 90px
+       margin-left: 2.5rem  
+       width: 6.5rem
        height: 2px
        background-color: $primary
     &__text
+      font-family: 'Futura Book', sans-serif
       font-size: 1.28rem
       line-height: 2.07rem
       text-transform: none   
       max-width: 31.57rem
+      margin-bottom: 3.3rem
     &__heading
       font-size: 1.42rem
       &--hight
@@ -55,5 +63,5 @@ img
         width: 32px
         height: 2px
         background-color: $primary
-
+  
         
