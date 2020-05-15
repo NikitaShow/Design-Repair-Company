@@ -1,13 +1,28 @@
 .design
   background: linear-gradient(to bottom, $light 50%, $dark 50%)
-  &__section-title
+  &__section-title-design
     margin-bottom: 3.5rem
-.section-title
+.section-title-design
   display: flex
   flex-direction: column
   align-items: center
+  text-align: center
+  text-transform: uppercase
+  font-family: cursiv
+  font-weight: normal
+  &__heading
+    font-size: 1.42rem
   &__image
+    display: flex
+    justify-content: center
+    align-items: center
     margin-bottom: 1.2rem
+    &::before, &::after
+      content: ''
+      margin: 0 10px
+      width: 32px
+      height: 2px
+      background-color: $primary
   &__text
     max-width: 53rem
     font-family: 'Futura Book', sans-serif

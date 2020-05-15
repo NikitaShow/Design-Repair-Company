@@ -11,13 +11,40 @@ img
   max-width: 100%
 .section
   padding: 120px 0 
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
     text-align: center
     text-transform: uppercase
-    font-family:  cursiv
+    font-family: cursiv
     font-weight: normal
+    &--left
+      text-align: left
+    &__word
+      display: flex
+      align-items: center
+      &::after
+       content: ''
+       margin-left: 2rem  
+       width: 90px
+       height: 2px
+       background-color: $primary
+    &__text
+      font-size: 1.28rem
+      line-height: 2.07rem
+      text-transform: none   
+      max-width: 31.57rem
     &__heading
       font-size: 1.42rem
+      &--hight
+        font-family: Yeseva One
+        font-weight: normal
+        font-size: 1.928rem
+        line-height: 2.642rem
+        letter-spacing: -0.07em
+      &--primary
+        color: $primary
     &__image
       display: flex
       justify-content: center
@@ -28,4 +55,5 @@ img
         width: 32px
         height: 2px
         background-color: $primary
+
         
