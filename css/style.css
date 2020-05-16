@@ -646,9 +646,15 @@ img {
     margin: 0;
     margin-bottom: 0.64rem; }
 
+.swiper-switcher {
+  margin-top: 4.6rem; }
+
 .swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.7rem;
   background-color: rgba(255, 255, 255, 0.3); }
   .swiper-pagination-bullet-active {
+    margin: 0 50px;
     background-color: #fff; }
 
 .swiper-button-prev, .swiper-button-next {
@@ -661,6 +667,7 @@ img {
     display: none; }
 
 .swiper-button-prev {
+  left: 0;
   background: url("../img/arrow-prew.svg"); }
 
 .swiper-button-next {
@@ -669,6 +676,9 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px; }
 
 .types__section-title {
   margin-bottom: 1.2rem; }
