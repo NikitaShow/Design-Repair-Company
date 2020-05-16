@@ -15,13 +15,12 @@
   .card
     &__title
       font-size: 1.09rem    
-@media screen and (max-width: 760px)    
   .row
     flex-direction: column
     align-items: center
   .types
     &__card
-      margin-bottom: 4.29rem
+      margin-bottom: 4.29rem  
   .design
     background: $dark
     &__section-title
@@ -29,14 +28,33 @@
     &__card
       margin-bottom: 4.29rem   
   .section-title
+    &-design__heading
+      color: $light
     &__text
       font-size: 1.07rem   
       color: $light   
   .card
     &__text
-      margin-left: 0    
+      margin-left: 0   
+  .swiper 
+    &-slide
+      &-text
+        flex-basis: 50%    
+    &-switcher
+      margin-top: 2.5rem         
+  .col-1
+    width: 100%
+    margin-bottom: 3rem
+  .col-2
+    width: 100%   
+@media screen and (max-width: 700px)    
+  .swiper-slide
+    &__heading
+      font-size: 1rem         
+    
 
-@media screen and (max-width: 570px)      
+@media screen and (max-width: 570px)   
+
   .contacts
     &__phone
       margin-right: 0
@@ -57,7 +75,7 @@
     &__button
       display: block
       min-width: 24.14rem
-      margin-bottom: 1.85rem
+      margin-bottom: 1.85rem   
   .card
     &__text
       width: 85%
@@ -92,7 +110,13 @@
       justify-content: center
       align-self: center
       padding: 1.428rem 0
-      width: 100%       
+      width: 100%    
+  .section-title__word
+    &::after
+      display: none  
+  .swiper-slide
+    &__text
+      flex-basis: 50%          
       
 @media screen and (max-height: 650px)
   .hero

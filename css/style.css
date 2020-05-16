@@ -738,7 +738,8 @@ img {
   font-family: cursiv;
   font-weight: normal; }
   .section-title-design__heading {
-    font-size: 1.42rem; }
+    font-size: 1.42rem;
+    margin-bottom: 1.214rem; }
   .section-title-design__image {
     display: flex;
     justify-content: center;
@@ -834,9 +835,7 @@ img {
   .hero__content {
     margin-left: 0; }
   .card__title {
-    font-size: 1.09rem; } }
-
-@media screen and (max-width: 760px) {
+    font-size: 1.09rem; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -848,11 +847,26 @@ img {
       color: #fff; }
     .design__card {
       margin-bottom: 4.29rem; }
+  .section-title-design__heading {
+    color: #fff; }
   .section-title__text {
     font-size: 1.07rem;
     color: #fff; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .swiper-slide-text {
+    flex-basis: 50%; }
+  .swiper-switcher {
+    margin-top: 2.5rem; }
+  .col-1 {
+    width: 100%;
+    margin-bottom: 3rem; }
+  .col-2 {
+    width: 100%; } }
+
+@media screen and (max-width: 700px) {
+  .swiper-slide__heading {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -906,7 +920,11 @@ img {
     justify-content: center;
     align-self: center;
     padding: 1.428rem 0;
-    width: 100%; } }
+    width: 100%; }
+  .section-title__word::after {
+    display: none; }
+  .swiper-slide__text {
+    flex-basis: 50%; } }
 
 @media screen and (max-height: 650px) {
   .hero__scroll-down {
