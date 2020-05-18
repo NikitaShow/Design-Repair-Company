@@ -63,4 +63,9 @@ $(document).ready(function () {
   var bullets = $('.swiper-pagination');
   next.css('left', prev.width() + 25 + bullets.width()+13)
   bullets.css('left', prev.width() + 17)
+
+  new WOW().init();
+  
 });
+
+
