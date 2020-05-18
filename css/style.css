@@ -629,7 +629,7 @@ img {
     color: #E3B873; }
 
 .projects {
-  padding-bottom: 27.3rem; }
+  padding-bottom: 29.5rem; }
 
 .swiper-slide {
   display: flex;
@@ -689,7 +689,7 @@ img {
   padding-bottom: 1rem; }
   .control__section-title {
     margin-bottom: 2.214rem;
-    margin-top: -30rem; }
+    margin-top: -32.3rem; }
   .control__video {
     position: relative;
     display: flex;
@@ -728,7 +728,21 @@ img {
     border-bottom: 1px solid rgba(19, 19, 19, 0.3);
     font-family: 'Futura Book', sans-serif;
     font-size: 1.286rem;
-    color: #363636; }
+    color: #131313; }
+    .control__input::-webkit-input-placeholder {
+      color: #363636; }
+    .control__input::-moz-placeholder {
+      color: #363636; }
+    .control__input:-ms-input-placeholder {
+      color: #363636; }
+    .control__input::-ms-input-placeholder {
+      color: #363636; }
+    .control__input::placeholder {
+      color: #363636; }
+    .control__input:-moz-placeholder {
+      color: #363636; }
+    .control__input-ms-input-placeholder {
+      color: #363636; }
   .control__form {
     display: flex;
     flex-wrap: wrap;
@@ -756,7 +770,8 @@ img {
 
 .video__play {
   position: relative;
-  margin: auto; }
+  margin: auto;
+  cursor: pointer; }
 
 .types {
   padding-top: 9.642rem; }
@@ -950,7 +965,8 @@ img {
     .control__label {
       color: rgba(255, 255, 255, 0.5); }
     .control__input {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fff; }
       .control__input::-webkit-input-placeholder {
         color: #fff; }
       .control__input::-moz-placeholder {
@@ -1011,11 +1027,13 @@ img {
       order: 4;
       transform: translateY(50%); }
     .control__policy-label {
-      margin-bottom: 4.428rem; }
+      margin-bottom: 2.857rem; }
+    .control__text {
+      font-size: 1rem; }
   .input-group--first {
     margin-bottom: 4.5rem; }
   .input-group--second {
-    margin-bottom: 1.929rem; } }
+    margin-bottom: 0; } }
 
 @media screen and (max-width: 470px) {
   .hero {
