@@ -46,7 +46,21 @@
     width: 100%
     margin-bottom: 3rem
   .col-2
-    width: 100%   
+    width: 100%    
+  .control
+    background-color: $dark  
+    &__text
+      color: $light
+    &__label
+      color: rgba(255, 255, 255, 0.5)
+    &__input
+      border-bottom: 1px solid rgba($light, 0.3) 
+      &::placeholder 
+        color: $light  
+    &__policy
+      &-label
+        color: $light 
+           
 @media screen and (max-width: 700px)    
   .swiper-slide
     &__heading
@@ -92,8 +106,25 @@
       display: none
     &--media-second
       display: block 
+  .control
+    padding-bottom: 0
+    &__form
+      flex-direction: column  
+    &__button
+      order: 4 
+      transform: translateY(50%)
+    &__policy-label
+      margin-bottom: 4.428rem     
+  .input-group
+    &--first
+      margin-bottom: 4.5rem  
+    &--second
+      margin-bottom: 1.929rem  
+    
 
 @media screen and (max-width: 470px) 
+  .hero
+    background: $dark url('../img/hero-bg-mobile.jpg') no-repeat center / cover
   .modal
     &__dialog
       width: 80%
@@ -116,7 +147,17 @@
       display: none  
   .swiper-slide
     &__text
-      flex-basis: 50%          
+      flex-basis: 50%  
+  .control
+    &__video
+      min-width: 24.285rem
+      min-height: 14.785rem
+      background: $dark url(../img/control_mobile.jpg) center no-repeat 
+  .video
+    &__play
+      width: 70px
+      height: 70px
+      
       
 @media screen and (max-height: 650px)
   .hero
