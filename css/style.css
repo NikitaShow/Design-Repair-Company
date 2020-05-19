@@ -1028,7 +1028,14 @@ img {
       .control__input::placeholder {
         color: #fff; }
     .control__policy-label {
-      color: #fff; } }
+      color: #fff; }
+  .footer {
+    padding: 0;
+    background: #131313; }
+    .footer__wrap {
+      background-color: #131313; }
+    .footer__form {
+      flex-direction: column; } }
 
 @media screen and (max-width: 700px) {
   .swiper-slide__heading {
@@ -1083,7 +1090,11 @@ img {
   .input-group--first {
     margin-bottom: 4.5rem; }
   .input-group--second {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .footer__form {
+    flex-basis: 100%; }
+  .footer__menu {
+    visibility: hidden; } }
 
 @media screen and (max-width: 470px) {
   .hero {
@@ -1112,9 +1123,25 @@ img {
     min-width: 24.285rem;
     min-height: 14.785rem;
     background: #131313 url(../img/control_mobile.jpg) center no-repeat; }
+  .control__policy-label {
+    justify-content: flex-start;
+    margin-left: 0; }
   .video__play {
     width: 70px;
-    height: 70px; } }
+    height: 70px; }
+  .footer__title {
+    margin-bottom: 3.714rem; }
+  .footer__input-group {
+    margin-bottom: 4.5rem; }
+    .footer__input-group--full-width {
+      margin-bottom: 1rem; }
+  .footer__button {
+    width: 100%; }
+  .footer__policy {
+    margin-left: 0;
+    margin-bottom: 4.809rem; }
+  .policy__label--center {
+    justify-content: flex-start; } }
 
 @media screen and (max-height: 650px) {
   .hero__scroll-down {

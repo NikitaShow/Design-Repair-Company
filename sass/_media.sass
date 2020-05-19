@@ -61,6 +61,14 @@
     &__policy
       &-label
         color: $light 
+  .footer
+    padding: 0
+    background: $dark   
+    &__wrap 
+      background-color: $dark
+    &__form
+      flex-direction: column
+
            
 @media screen and (max-width: 700px)    
   .swiper-slide
@@ -122,7 +130,13 @@
     &--first
       margin-bottom: 4.5rem  
     &--second
-      margin-bottom: 0  
+      margin-bottom: 0 
+  .footer
+    &__form
+      flex-basis: 100%
+    &__menu
+      visibility: hidden
+      
     
 
 @media screen and (max-width: 470px) 
@@ -156,10 +170,30 @@
       min-width: 24.285rem
       min-height: 14.785rem
       background: $dark url(../img/control_mobile.jpg) center no-repeat 
+    &__policy-label
+      justify-content: flex-start
+      margin-left: 0  
   .video
     &__play
       width: 70px
       height: 70px
+  .footer
+    &__title
+      margin-bottom: 3.714rem
+    &__input-group
+      margin-bottom: 4.5rem
+      &--full-width
+        margin-bottom: 1rem
+    &__button
+      width: 100%   
+    &__policy
+      margin-left: 0  
+      margin-bottom: 4.809rem 
+  .policy
+    &__label
+      &--center
+        justify-content: flex-start
+         
       
       
 @media screen and (max-height: 650px)
