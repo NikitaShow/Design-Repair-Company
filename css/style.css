@@ -402,6 +402,13 @@ template {
   justify-content: space-between;
   padding: 0 10px; }
 
+.row-around {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 114px;
+  margin-bottom: 3.785rem; }
+
 .col {
   flex-basis: 32%; }
 
@@ -410,6 +417,9 @@ template {
 
 .col-2 {
   width: 54.93%; }
+
+.col-3 {
+  width: 26.5%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -832,9 +842,10 @@ img {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  font-family: cursiv;
+  font-family: 'Yeseva One', cursiv;
   font-weight: normal; }
   .section-title-design__heading {
+    font-weight: normal;
     font-size: 1.42rem;
     margin-bottom: 1.214rem; }
   .section-title-design__image {
@@ -863,6 +874,110 @@ img {
 .card--media-second {
   display: none; }
 
+.team {
+  background: linear-gradient(to top, #fff 50%, #131313 50%);
+  padding-bottom: 15.87rem; }
+  .team__text {
+    max-width: 40.785rem;
+    margin: auto;
+    margin-bottom: 4.5rem;
+    text-align: center;
+    font-family: 'Futura Book', sans-serif;
+    font-size: 1.428rem;
+    line-height: 2.4rem; }
+    .team__text::before {
+      content: '';
+      margin: auto;
+      margin-bottom: 0.8rem;
+      display: block;
+      width: 55px;
+      height: 2px;
+      background-color: #E3B873;
+      border-radius: 30px; }
+  .team__section-title-team {
+    margin-bottom: 5.95rem; }
+
+.section-title-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursiv;
+  font-weight: normal; }
+  .section-title-team__heading {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.42rem;
+    margin-bottom: 1.214rem; }
+  .section-title-team__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem; }
+    .section-title-team__image::before, .section-title-team__image::after {
+      content: '';
+      margin: 0 10px;
+      width: 32px;
+      height: 2px;
+      background-color: #E3B873; }
+  .section-title-team__text {
+    max-width: 32rem;
+    font-family: 'Futura Book', sans-serif;
+    font-weight: normal;
+    font-size: 1.43rem;
+    line-height: 1.93rem;
+    color: #fff;
+    text-transform: none; }
+
+.person {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .person__info {
+    margin: 0 auto;
+    margin-top: -5.714rem;
+    text-align: center;
+    min-width: 16.643rem;
+    padding-top: 1.571rem;
+    background: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05); }
+  .person__icon {
+    position: absolute;
+    background-color: #E3B873;
+    padding: 0.928rem;
+    transform: translateY(-50%);
+    margin-left: -2.5rem;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
+
+.info__name {
+  font-family: 'Yeseva One', cursiv;
+  font-style: normal;
+  font-size: 1.285rem;
+  line-height: 1.785rem;
+  color: #131313; }
+
+.info__position {
+  margin-bottom: 1.4rem;
+  font-family: 'FuturaBook', sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.857rem;
+  color: #959595; }
+  .info__position--small {
+    font-size: 1.1rem; }
+
+.info__experience {
+  width: 100%;
+  padding: 0.97rem 1.642rem;
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.928rem;
+  line-height: 1.428rem;
+  background-color: #E3B873;
+  color: #fff; }
+
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem; }
@@ -872,7 +987,8 @@ img {
     margin: auto;
     padding-top: 1.2rem;
     padding-bottom: 2.5rem;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.714rem;
+    margin-top: -18.87rem; }
   .footer__title {
     margin-bottom: 3.214rem;
     text-transform: uppercase;
@@ -1037,7 +1153,19 @@ img {
     .footer__wrap {
       background-color: #131313; }
     .footer__form {
-      flex-direction: column; } }
+      flex-direction: column; }
+  .team {
+    background: #131313; }
+    .team__text {
+      display: none; }
+      .team__text::before {
+        display: none; }
+  .row-around {
+    flex-direction: column;
+    align-items: center; }
+  .col-3 {
+    width: 21.714rem;
+    margin-bottom: 8rem; } }
 
 @media screen and (max-width: 700px) {
   .swiper-slide__heading {
@@ -1144,6 +1272,10 @@ img {
     margin-bottom: 4.809rem; }
   .policy__label--center {
     justify-content: flex-start; } }
+
+@media screen and (max-width: 350px) {
+  .col-3 {
+    width: 200px; } }
 
 @media screen and (max-height: 650px) {
   .hero__scroll-down {
