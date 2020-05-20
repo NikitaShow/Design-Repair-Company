@@ -69,6 +69,7 @@ $(document).ready(function () {
   //валидация формы
 
   $('.modal__form').validate({
+    errorClass: "invalid",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -78,7 +79,7 @@ $(document).ready(function () {
       },
       userPhone: {
         required: true,
-        minlength: 18,
+        minlength: 18
       },
       // compound rule
       userEmail: {
@@ -96,16 +97,23 @@ $(document).ready(function () {
       }, 
       userPhone: {
         required: "Заполните поле",
-        minlength: "Введите корректный номер",
+        minlength: "Введите корректный номер"
       },
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
       },
       policyCheckbox: "Заполните поле"
-    }
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+       error.insertAfter($(element));
+     },
   });
   $('.footer__form').validate({
+    errorClass: "invalid",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -113,7 +121,10 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 18
+      },
       // compound rule
       userEmail: {
         required: true,
@@ -128,7 +139,10 @@ $(document).ready(function () {
         minlength: "Не менее двух символов",
         maxlength: "Не более пятнадцати символов"
       }, 
-      userPhone: "Заполните поле",
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Введите корректный номер"
+      },
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
@@ -143,6 +157,7 @@ $(document).ready(function () {
      },
   });
   $('.control__form').validate({
+    errorClass: "invalid",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -150,7 +165,10 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 18
+      },
       // compound rule
       userEmail: {
         required: true,
@@ -166,7 +184,10 @@ $(document).ready(function () {
         minlength: "Не менее двух символов",
         maxlength: "Не более пятнадцати символов"
       }, 
-      userPhone: "Заполните поле",
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Введите корректный номер"
+      },
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"

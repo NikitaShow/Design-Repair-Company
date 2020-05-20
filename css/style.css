@@ -378,6 +378,28 @@ template {
   .input--light:-ms-input-placeholder {
     color: #fff;
     opacity: 1; }
+  .input--dark {
+    border-bottom: 1px solid rgba(19, 19, 19, 0.3);
+    color: #131313; }
+    .input--dark::-webkit-input-placeholder {
+      color: #363636; }
+    .input--dark::-moz-placeholder {
+      color: #363636; }
+    .input--dark:-ms-input-placeholder {
+      color: #363636; }
+    .input--dark::-ms-input-placeholder {
+      color: #363636; }
+    .input--dark::placeholder {
+      color: #363636; }
+    .input--dark::-moz-placeholder {
+      color: #363636;
+      opacity: 1; }
+    .input--dark:-moz-placeholder {
+      color: #363636;
+      opacity: 1; }
+    .input--dark:-ms-input-placeholder {
+      color: #363636;
+      opacity: 1; }
 
 .policy__checkbox {
   background: transparent;
@@ -400,12 +422,14 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-.error {
+.invalid {
+  border-bottom: 1px solid tomato;
   color: tomato; }
 
-div.error {
+div.invalid {
   position: absolute;
-  margin-top: 52px; }
+  margin-top: 52px;
+  border: none; }
 
 #policyCheckbox-error {
   margin-top: 20px; }
@@ -753,32 +777,6 @@ img {
       height: 2px;
       background-color: #E3B873;
       border-radius: 30px; }
-  .control__input {
-    padding-top: 0px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(19, 19, 19, 0.3);
-    font-family: 'Futura Book', sans-serif;
-    font-size: 1.286rem;
-    color: #131313; }
-    .control__input::-webkit-input-placeholder {
-      color: #363636; }
-    .control__input::-moz-placeholder {
-      color: #363636; }
-    .control__input:-ms-input-placeholder {
-      color: #363636; }
-    .control__input::-ms-input-placeholder {
-      color: #363636; }
-    .control__input::placeholder {
-      color: #363636; }
-    .control__input::-moz-placeholder {
-      color: #363636;
-      opacity: 1; }
-    .control__input:-moz-placeholder {
-      color: #363636;
-      opacity: 1; }
-    .control__input:-ms-input-placeholder {
-      color: #363636;
-      opacity: 1; }
   .control__form {
     display: flex;
     flex-wrap: wrap;

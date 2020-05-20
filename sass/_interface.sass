@@ -51,6 +51,20 @@
     &:-ms-input-placeholder  
       color: $light    
       opacity: 1
+  &--dark
+    border-bottom: 1px solid rgba($dark, 0.3) 
+    color: $dark
+    &::placeholder
+      color: #363636
+    &::-moz-placeholder 
+      color: #363636    
+      opacity: 1
+    &:-moz-placeholder
+      color: #363636    
+      opacity: 1       
+    &:-ms-input-placeholder  
+      color: #363636    
+      opacity: 1    
 
 .policy
   &__checkbox
@@ -75,11 +89,13 @@
     &--center  
       justify-content: center
     
-.error
+.invalid
+  border-bottom: 1px solid tomato
   color: tomato
-div.error
+div.invalid
   position: absolute
   margin-top: 52px
+  border: none
 #policyCheckbox-error
   margin-top: 20px  
 
