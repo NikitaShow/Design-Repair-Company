@@ -44,10 +44,15 @@
     color: $dark
     &::placeholder
       color: #363636
+    &::-moz-placeholder 
+      color: #363636    
+      opacity: 1
     &:-moz-placeholder
-      color: #363636
-    &-ms-input-placeholder
-      color: #363636       
+      color: #363636    
+      opacity: 1       
+    &:-ms-input-placeholder  
+      color: #363636    
+      opacity: 1      
   &__form
     display: flex
     flex-wrap: wrap

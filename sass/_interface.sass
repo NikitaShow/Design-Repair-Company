@@ -42,6 +42,16 @@
   &--light
     &::placeholder
       color: $light
+    &::-moz-placeholder 
+      color: $light    
+      opacity: 1
+    &:-moz-placeholder
+      color: $light    
+      opacity: 1       
+    &:-ms-input-placeholder  
+      color: $light    
+      opacity: 1
+
 .policy
   &__checkbox
     background: transparent

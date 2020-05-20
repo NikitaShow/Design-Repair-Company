@@ -369,6 +369,15 @@ template {
     color: #fff; }
   .input--light::placeholder {
     color: #fff; }
+  .input--light::-moz-placeholder {
+    color: #fff;
+    opacity: 1; }
+  .input--light:-moz-placeholder {
+    color: #fff;
+    opacity: 1; }
+  .input--light:-ms-input-placeholder {
+    color: #fff;
+    opacity: 1; }
 
 .policy__checkbox {
   background: transparent;
@@ -761,10 +770,15 @@ img {
       color: #363636; }
     .control__input::placeholder {
       color: #363636; }
+    .control__input::-moz-placeholder {
+      color: #363636;
+      opacity: 1; }
     .control__input:-moz-placeholder {
-      color: #363636; }
-    .control__input-ms-input-placeholder {
-      color: #363636; }
+      color: #363636;
+      opacity: 1; }
+    .control__input:-ms-input-placeholder {
+      color: #363636;
+      opacity: 1; }
   .control__form {
     display: flex;
     flex-wrap: wrap;
@@ -1190,6 +1204,8 @@ img {
     display: none; }
   .title {
     font-size: 1.64rem; }
+  .hero::after {
+    display: none; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
@@ -1266,6 +1282,8 @@ img {
   .control__policy-label {
     justify-content: flex-start;
     margin-left: 0; }
+  .control__text {
+    line-height: 2rem; }
   .video__play {
     width: 70px;
     height: 70px; }
