@@ -392,9 +392,14 @@ template {
     justify-content: center; }
 
 .error {
-  color: red;
+  color: tomato; }
+
+div.error {
   position: absolute;
-  margin-top: 21px; }
+  margin-top: 52px; }
+
+#policyCheckbox-error {
+  margin-top: 20px; }
 
 .container {
   width: 90%;

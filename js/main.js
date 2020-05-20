@@ -121,6 +121,7 @@ $(document).ready(function () {
       },
       policyCheckbox: "required"
     },
+    errorElement: "div",
     messages: {
       userName: {
         required: "Заполните поле",
@@ -133,7 +134,13 @@ $(document).ready(function () {
         email: "Введите корректный email"
       },
       policyCheckbox: "Заполните поле"
-    }
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+       error.insertAfter($(element));
+     },
   });
   $('.control__form').validate({
     rules: {
@@ -152,6 +159,7 @@ $(document).ready(function () {
       policyCheckbox: "required",
       
     },
+    errorElement: "div",
     messages: {
       userName: {
         required: "Заполните поле",
@@ -164,7 +172,13 @@ $(document).ready(function () {
         email: "Введите корректный email"
       },
       policyCheckbox: "Заполните поле"
-    }
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+       error.insertAfter($(element));
+     },
   });
   //Маска для телефона
   $('[type=tel]').mask('+7 (000) 000-00-00');
