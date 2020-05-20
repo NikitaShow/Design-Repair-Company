@@ -76,24 +76,33 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 18,
+      },
       // compound rule
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policyCheckbox: "required",
     },
+    errorElement: "div",
     messages: {
       userName: {
         required: "Заполните поле",
         minlength: "Не менее двух символов",
         maxlength: "Не более пятнадцати символов"
       }, 
-      userPhone: "Заполните поле",
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Введите корректный номер",
+      },
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      }
+      },
+      policyCheckbox: "Заполните поле"
     }
   });
   $('.footer__form').validate({
@@ -109,7 +118,8 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policyCheckbox: "required"
     },
     messages: {
       userName: {
@@ -121,7 +131,8 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      }
+      },
+      policyCheckbox: "Заполните поле"
     }
   });
   $('.control__form').validate({
@@ -137,7 +148,9 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policyCheckbox: "required",
+      
     },
     messages: {
       userName: {
@@ -149,7 +162,8 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      }
+      },
+      policyCheckbox: "Заполните поле"
     }
   });
   //Маска для телефона

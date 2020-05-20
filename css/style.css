@@ -391,6 +391,11 @@ template {
   .policy__label--center {
     justify-content: center; }
 
+.error {
+  color: red;
+  position: absolute;
+  margin-top: 21px; }
+
 .container {
   width: 90%;
   max-width: 1256px;
