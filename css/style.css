@@ -885,7 +885,7 @@ img {
   display: none; }
 
 .team {
-  background: linear-gradient(to top, #fff 50%, #131313 50%);
+  background: linear-gradient(to top, #fff 57.5%, #131313 42.5%);
   padding-bottom: 15.87rem; }
   .team__text {
     max-width: 40.785rem;
@@ -1281,9 +1281,15 @@ img {
     margin-left: 0;
     margin-bottom: 4.809rem; }
   .policy__label--center {
-    justify-content: flex-start; } }
+    justify-content: flex-start; }
+  .team {
+    padding: 25px 0 150px 0; }
+  .section-title-team__text {
+    font-size: 1.071rem; } }
 
 @media screen and (max-width: 350px) {
+  .policy__label {
+    font-size: 1rem; }
   .col-3 {
     width: 200px; } }
 
