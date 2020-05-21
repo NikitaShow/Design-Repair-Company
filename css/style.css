@@ -1002,8 +1002,10 @@ img {
   background-color: #E3B873;
   color: #fff; }
 
-.clients__section-title-clients {
-  margin-bottom: 3.5rem; }
+.clients {
+  padding-bottom: 27.25rem; }
+  .clients__section-title-clients {
+    margin-bottom: 3.5rem; }
 
 .section-title-clients {
   display: flex;
@@ -1039,9 +1041,8 @@ img {
 
 .person {
   position: relative;
-  background-color: red;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
-  padding: 1.714rem 2.285rem  4.5rem 1.5rem; }
+  padding: 1.714rem 1.5rem  4.7rem 1.5rem; }
   .person__heading {
     margin-bottom: 1rem;
     display: flex;
@@ -1056,9 +1057,10 @@ img {
     line-height: 1.642rem;
     color: #131313; }
   .person__feedback {
-    font-family: 'FuturaBookC', sans-serif;
-    font-size: 1.08rem;
-    line-height: 180%;
+    max-width: 324px;
+    font-family: 'FuturaBook', sans-serif;
+    font-size: 0.93rem;
+    line-height: 1.98rem;
     color: #959595; }
   .person__footer {
     position: absolute;
@@ -1108,7 +1110,8 @@ img {
     margin: auto;
     padding-top: 1.2rem;
     padding-bottom: 2.5rem;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.714rem;
+    margin-top: -18.87rem; }
   .footer__title {
     margin-bottom: 3.214rem;
     text-transform: uppercase;
@@ -1149,6 +1152,14 @@ img {
     color: #E3B873; }
   .footer__address {
     margin-bottom: 1.7rem; }
+  .footer__phone {
+    text-transform: uppercase;
+    font-family: Yeseva One;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    color: #E3B873;
+    text-decoration: none; }
   .footer-social {
     display: flex;
     justify-content: space-between;
@@ -1166,6 +1177,7 @@ img {
     padding: 4.285rem 0;
     background-color: #131313; }
   .footer__map {
+    height: 465px;
     max-width: 66.071rem;
     margin: auto;
     margin-bottom: 4.8rem; }
@@ -1226,6 +1238,14 @@ img {
   .modal__button {
     align-self: flex-end;
     padding: 19px 46px; }
+
+@media screen and (max-width: 1276px) {
+  .person {
+    padding: 1.714rem 0.2rem  4.7rem 0.3rem; }
+    .person__feedback {
+      line-height: 1.4rem; }
+  .col-4 {
+    flex-basis: 32%; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1308,7 +1328,9 @@ img {
     align-items: center; }
   .col-3 {
     width: 21.714rem;
-    margin-bottom: 8rem; } }
+    margin-bottom: 8rem; }
+  .clients {
+    display: none; } }
 
 @media screen and (max-width: 700px) {
   .swiper-slide__heading {
