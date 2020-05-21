@@ -897,8 +897,7 @@ img {
   display: none; }
 
 .team {
-  background: linear-gradient(to top, #fff 57.5%, #131313 42.5%);
-  padding-bottom: 15.87rem; }
+  background: linear-gradient(to top, #fff 57.5%, #131313 42.5%); }
   .team__text {
     max-width: 40.785rem;
     margin: auto;
@@ -1000,6 +999,90 @@ img {
   background-color: #E3B873;
   color: #fff; }
 
+.clients__section-title-clients {
+  margin-bottom: 3.5rem; }
+
+.section-title-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursiv;
+  font-weight: normal; }
+  .section-title-clients__heading {
+    font-weight: normal;
+    font-size: 1.42rem;
+    margin-bottom: 1.214rem; }
+  .section-title-clients__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem; }
+    .section-title-clients__image::before, .section-title-clients__image::after {
+      content: '';
+      margin: 0 10px;
+      width: 32px;
+      height: 2px;
+      background-color: #E3B873; }
+  .section-title-clients__text {
+    max-width: 53rem;
+    font-family: 'Futura Book', sans-serif;
+    font-size: 1.43rem;
+    line-height: 1.93rem;
+    color: #131313;
+    text-transform: none; }
+
+.person__heading {
+  display: flex;
+  align-items: center; }
+
+.person__photo {
+  border-radius: 50%; }
+
+.person__name {
+  font-family: 'Yeseva One', cursiv;
+  font-weight: normal;
+  font-size: 1.285rem;
+  line-height: 1.642rem;
+  color: #131313; }
+
+.person__feedback {
+  font-family: 'FuturaBookC', sans-serif;
+  font-size: 1.071rem;
+  line-height: 1.928rem;
+  color: #959595; }
+
+.person__footer {
+  display: flex; }
+
+.person__squer {
+  display: flex;
+  align-items: center;
+  margin-right: 1px;
+  padding: 11px 14px 12px 17px;
+  background-color: #E3B873; }
+
+.person__days {
+  display: flex;
+  align-items: center;
+  padding: 11px 14px 12px 12px;
+  background-color: #E3B873; }
+
+.person__sup-text {
+  font-family: 'Yeseva One', cursiv;
+  font-weight: normal;
+  font-size: 1.214rem;
+  line-height: 1.714rem;
+  text-transform: uppercase;
+  color: #fff; }
+
+.person-picture__squer {
+  margin-right: 15px; }
+
+.person-picture__days {
+  margin-right: 15px; }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -1011,8 +1094,7 @@ img {
     margin: auto;
     padding-top: 1.2rem;
     padding-bottom: 2.5rem;
-    margin-bottom: 3.714rem;
-    margin-top: -18.87rem; }
+    margin-bottom: 3.714rem; }
   .footer__title {
     margin-bottom: 3.214rem;
     text-transform: uppercase;
