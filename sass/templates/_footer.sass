@@ -1,4 +1,6 @@
 .footer
+  display: flex
+  flex-direction: column
   background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
   padding-top: 3rem
   &__wrap
@@ -12,7 +14,7 @@
   &__title
     margin-bottom: 3.214rem
     text-transform: uppercase
-    font-family: 'Yeseva One', cursive
+    font-family: 'Yeseva One', cursiv
     font-weight: normal
     font-size: 1.428rem
     text-align: center
@@ -36,8 +38,25 @@
     flex-basis: 100%
     margin-bottom: 3.7rem
     margin-left: -0.75rem
-    
-
+  &__info
+    margin: auto
+    max-width: 33.5rem
+    text-align: center
+  &-address
+    text-transform: uppercase
+    font-family: Yeseva One
+    font-weight: normal
+    font-size: 1.428rem
+    line-height: 2rem
+    color: $primary
+  &__address
+    margin-bottom: 1.7rem  
+  &-social
+    display: flex
+    justify-content: space-between
+    margin: auto
+    max-width: 5.071rem 
+    margin-bottom: 2.7rem    
   &__button
     margin: auto  
     padding: 1.2rem 3.99rem
@@ -47,7 +66,11 @@
     font-size: 1.071rem
   &__menu
     padding: 4.285rem 0
-    background-color: $dark   
+    background-color: $dark 
+  &__map
+    max-width: 66.071rem
+    margin: auto  
+    margin-bottom: 4.8rem  
      
 
     
