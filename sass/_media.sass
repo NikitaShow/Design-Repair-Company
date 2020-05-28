@@ -1,3 +1,28 @@
+@media screen and (min-width: 992px)
+  .logo
+    &:hover
+      text-decoration: underline
+  .contacts__phone
+    &:hover
+      text-decoration: none    
+  .nav__item
+    &:hover
+      color: $primary
+  .button--primary
+    &:hover
+      box-shadow: none
+  .hero__link
+    &:hover
+      text-decoration: underline 
+  .footer__phone
+    &:hover
+      text-decoration: underline
+  .footer-email, .footer-instagram
+    &:hover
+      background-color: $primary
+
+
+        
 @media screen and (max-width: 1276px)
   .person
     padding: 1.714rem 0.2rem  4.7rem 0.3rem
@@ -13,6 +38,15 @@
     &__item
       margin-right: 1rem  
 @media screen and (max-width: 992px)
+  .projects
+    padding-top: 2.57rem
+    padding-bottom: 33rem
+  .types
+    padding-top: 6.071rem  
+  .team
+    padding-top: 5rem  
+    &-person
+      margin-bottom: 5.4rem
   .nav
     display: none
   .hero
@@ -29,6 +63,8 @@
   .types
     &__card
       margin-bottom: 4.29rem  
+  .section-title-design__text
+    color: $light  
   .design
     background: $dark
     &__section-title
@@ -49,7 +85,7 @@
       &-text
         flex-basis: 50%    
     &-switcher
-      margin-top: 2.5rem         
+      margin-top: 2.5rem          
   .col-1
     width: 100%
     margin-bottom: 3rem
@@ -73,6 +109,7 @@
     padding: 0
     background: $dark   
     &__wrap 
+      margin-top: -9rem
       background-color: $dark
     &__form
       flex-direction: column
@@ -87,7 +124,7 @@
     align-items: center
   .col-3
     width: 21.714rem
-    margin-bottom: 8rem
+    margin-bottom: 0  
   .clients
     display: none
 
@@ -163,7 +200,7 @@
     &__form
       flex-basis: 100%
     &__menu
-      visibility: hidden  
+      display: none 
     &__wrap
       width: 100%  
       margin-bottom: 2rem
@@ -237,8 +274,6 @@
     &__label
       &--center
         justify-content: flex-start
-  .team 
-    padding: 25px 0 150px 0
   .section-title-team__text
     font-size: 1.071rem      
 
@@ -247,11 +282,7 @@
     &__label
       font-size: 1rem
   .col-3
-    width: 200px
-
-
-         
-      
+    width: 200px     
       
 @media screen and (max-height: 650px)
   .hero
@@ -260,6 +291,15 @@
 @media screen and (max-height: 420px)
   .header
     position: relative
+  .hero
+    padding-top: 3.571rem
+    &__title
+      line-height: 3.7rem
+    &__text
+      margin-bottom: 1rem   
+    &::after
+      display: none  
+   
   .modal
     &__dialog
       padding: 2rem 3.5rem 1.5rem
@@ -271,6 +311,8 @@
       margin-bottom: 1rem 
     &__input
       margin-bottom: 1.5rem 
+      &-group
+        margin-bottom: 1rem
     &__policy
       margin-bottom: 1rem  
     &__button
@@ -291,6 +333,15 @@
         border: 1px solid $primary
         border-radius: 1px
         cursor: pointer
+  div.invalid
+    margin-top: 3.3rem     
 
+@media screen and (max-height: 320px)
+  .hero
+    padding-top: 3.571rem
+    &__title
+      line-height: 2rem
+    &__text
+      margin-bottom: 1rem  
 
 
