@@ -775,8 +775,9 @@ img {
 
 .swiper-img {
   width: 100%;
-  -o-object-fit: fill;
-  object-fit: fill;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
   object-position: center; }
 
@@ -1393,7 +1394,9 @@ img {
   position: relative;
   z-index: 7;
   cursor: pointer;
-  background-color: transparent; }
+  background-color: transparent;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 .loader {
   position: absolute;
@@ -1822,7 +1825,9 @@ img {
     -ms-flex-pack: start;
     justify-content: flex-start; }
   .section-title-team__text {
-    font-size: 1.071rem; } }
+    font-size: 1.071rem; }
+  .swiper-box {
+    height: 16.83rem; } }
 
 @media screen and (max-width: 350px) {
   .policy__label {
